@@ -1,11 +1,20 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react" // Importado useEffect
 import { Menu, X } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [headerHeight, setHeaderHeight] = useState(0)
+
+  // Calcula a altura do header dinamicamente
+  useEffect(() => {
+    const headerElement = document.querySelector('header');
+    if (headerElement) {
+      setHeaderHeight(headerElement.offsetHeight);
+    }
+  }, []);
 
   const menuItems = [
     { label: "Início", href: "#home" },
@@ -16,6 +25,18 @@ export default function Header() {
     { label: "Contato", href: "#contact" },
   ]
 
+  const handleScrollToSection = (href: string) => {
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetPosition - headerHeight - 20, // Subtrai a altura do header e um offset extra
+        behavior: "smooth"
+      });
+    }
+    setIsMenuOpen(false); // Fecha o menu mobile após clicar
+  };
+
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="container mx-auto px-4">
@@ -25,7 +46,7 @@ export default function Header() {
             <img
               src="/images/multi-tools-logo.png"
               alt="Multi Tools - Ferramentaria e Injeção de Plásticos"
-              className="h-20" // Aumentado de h-16 para h-20
+              className="h-20"
             />
           </div>
 
@@ -38,7 +59,7 @@ export default function Header() {
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 onClick={(e) => {
                   e.preventDefault()
-                  document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" })
+                  handleScrollToSection(item.href)
                 }}
               >
                 {item.label}
@@ -62,8 +83,7 @@ export default function Header() {
                 className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
                 onClick={(e) => {
                   e.preventDefault()
-                  document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" })
-                  setIsMenuOpen(false)
+                  handleScrollToSection(item.href)
                 }}
               >
                 {item.label}

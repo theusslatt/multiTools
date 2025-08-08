@@ -1,6 +1,6 @@
 "use client"
 
-import { MapPin, Phone, Mail } from "lucide-react"
+import { MapPin, Phone, Mail } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -9,11 +9,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <img
-              src="/images/multi-tools-logo.png" // Novo logo
-              alt="Multi Tools Logo"
-              className="h-12 mb-4 brightness-0 invert"
-            />
+            <div className="flex items-center cursor-pointer" onClick={() => window.location.reload()}>
+              <img
+                src="/images/multi-tools-logo.png" // Novo logo
+                alt="Multi Tools Logo"
+                className="h-12 mb-4 brightness-0 invert"
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Especialistas em injeção plástica para a indústria automotiva, oferecendo soluções de alta qualidade e
               precisão.

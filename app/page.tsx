@@ -9,7 +9,7 @@ import Footer from "./components/Footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-24"> {/* Adicionado pt-24 aqui */}
+    <main className="min-h-screen pt-24"> {/* Reintroduzido pt-24 aqui */}
       <Header />
       <HeroSection />
       <AboutSection />
