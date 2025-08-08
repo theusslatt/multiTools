@@ -1,5 +1,14 @@
 export default function ClientsSection() {
-  const clients = ["Volkswagen", "General Motors", "Ford", "Fiat Chrysler", "Toyota", "Honda", "Hyundai", "Renault"]
+  const clients = [
+    { name: "Volkswagen", logo: "/images/clients/volkswagen-logo.png" },
+    { name: "General Motors", logo: "/images/clients/general-motors-logo.png" },
+    { name: "Ford", logo: "/images/clients/ford-logo.png" },
+    { name: "Fiat Chrysler", logo: "/images/clients/fiat-chrysler-logo.png" },
+    { name: "Toyota", logo: "/images/clients/toyota-logo.png" },
+    { name: "Honda", logo: "/images/clients/honda-logo.png" },
+    { name: "Hyundai", logo: "/images/clients/hyundai-logo.png" },
+    { name: "Renault", logo: "/images/clients/renault-logo.png" },
+  ]
 
   return (
     <section id="clients" className="py-20 bg-gray-50">
@@ -17,9 +26,9 @@ export default function ClientsSection() {
             <div key={index} className="text-center">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <img
-                  src={`/placeholder.svg?height=80&width=120&text=${client}`}
-                  alt={`Logo ${client}`}
-                  className="mx-auto grayscale hover:grayscale-0 transition-all"
+                  src={client.logo || "/placeholder.svg"}
+                  alt={`Logo ${client.name}`}
+                  className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition-all" // Ajustado para melhor visualização de logos
                 />
               </div>
             </div>

@@ -9,7 +9,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <img src="/images/multitools-logo.jpg" alt="Multi Tools Logo" className="h-12 mb-4 brightness-0 invert" />
+            <img
+              src="/images/multi-tools-logo.png" // Novo logo
+              alt="Multi Tools Logo"
+              className="h-12 mb-4 brightness-0 invert"
+            />
             <p className="text-gray-300 mb-4">
               Especialistas em injeção plástica para a indústria automotiva, oferecendo soluções de alta qualidade e
               precisão.

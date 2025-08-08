@@ -1,11 +1,11 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Factory, Award, Users } from "lucide-react"
+import { ArrowRight, Factory, Award, Users } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-50 to-white pt-20 pb-16">
+    <section id="home" className="bg-gradient-to-br from-blue-50 to-white pb-16"> {/* Removido pt-20 */}
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

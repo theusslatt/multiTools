@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
@@ -21,11 +21,11 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center cursor-pointer" onClick={() => window.location.reload()}>
             <img
-              src="/images/multitools-logo.jpg"
+              src="/images/multi-tools-logo.png"
               alt="Multi Tools - Ferramentaria e Injeção de Plásticos"
-              className="h-12"
+              className="h-20" // Aumentado de h-16 para h-20
             />
           </div>
 

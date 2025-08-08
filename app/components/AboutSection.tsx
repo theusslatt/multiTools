@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Target, Eye, Award, Cog } from "lucide-react"
+import { Target, Eye, Award, Cog } from 'lucide-react'
 
 export default function AboutSection() {
   const values = [
@@ -72,8 +72,8 @@ export default function AboutSection() {
             </div>
             <div>
               <img
-                src="/placeholder.svg?height=400&width=600&text=Equipe+Multitools"
-                alt="Equipe Multitools"
+                src="/images/multi-tools-art.png" // Usando a arte aqui
+                alt="Arte abstrata da Multi Tools"
                 className="rounded-lg shadow-lg"
               />
             </div>
