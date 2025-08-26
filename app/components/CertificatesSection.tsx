@@ -12,13 +12,6 @@ export default function CertificatesSection() {
       pdfPath: "/certificates/iatf-16949.pdf",
     },
     {
-      name: "ISO 9001:2015",
-      description: "Sistema de Gestão da Qualidade",
-      details: "Gestão integrada da qualidade",
-      icon: Shield,
-      pdfPath: "/certificates/iso-9001.pdf",
-    },
-    {
       name: "ISO 14001",
       description: "Sistema de Gestão Ambiental",
       details: "Política integrada qualidade e ambiental",
@@ -38,7 +31,7 @@ export default function CertificatesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {certificates.map((cert, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-8 flex flex-col items-center">
