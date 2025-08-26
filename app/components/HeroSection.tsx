@@ -16,7 +16,7 @@ export default function HeroSection() {
                 <span className="text-blue-600 block">Injeção Plástica</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Soluções especializadas para a indústria automotiva com mais de 20 anos de experiência, qualidade
+                Soluções especializadas para a indústria automotiva com mais de 38 anos de experiência, qualidade
                 certificada e tecnologia de ponta.
               </p>
             </div>
@@ -43,7 +43,7 @@ export default function HeroSection() {
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
               <div className="text-center">
                 <Factory className="mx-auto mb-2 text-blue-600" size={32} />
-                <div className="text-2xl font-bold text-gray-900">20+</div>
+                <div className="text-2xl font-bold text-gray-900">38+</div>
                 <div className="text-sm text-gray-600">Anos de experiência</div>
               </div>
               <div className="text-center">
@@ -61,7 +61,7 @@ export default function HeroSection() {
 
           {/* Image */}
           <div className="relative">
-            <img src="/images/fabrica-multitools.jpg" alt="Fábrica Multitools" className="rounded-lg shadow-2xl" />
+            <img src="/images/fabrica-multitools.png/" alt="Fábrica Multitools" className="rounded-lg shadow-2xl" />
             <div className="absolute inset-0 bg-blue-600 opacity-10 rounded-lg"></div>
           </div>
         </div>
