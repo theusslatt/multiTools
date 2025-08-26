@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Settings, Wrench, CheckCircle, Truck } from "lucide-react"
+import { Settings, Wrench, CheckCircle } from "lucide-react"
 
 export default function ServicesSection() {
   const services = [
