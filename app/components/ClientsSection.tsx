@@ -1,13 +1,29 @@
 export default function ClientsSection() {
   const clients = [
-    { name: "Volkswagen", logo: "/images/clients/volkswagen-logo.png" },
-    { name: "General Motors", logo: "/images/clients/general-motors-logo.png" },
-    { name: "Ford", logo: "/images/clients/ford-logo.png" },
-    { name: "Fiat Chrysler", logo: "/images/clients/fiat-chrysler-logo.png" },
-    { name: "Toyota", logo: "/images/clients/toyota-logo.png" },
-    { name: "Honda", logo: "/images/clients/honda-logo.png" },
-    { name: "Hyundai", logo: "/images/clients/hyundai-logo.png" },
-    { name: "Renault", logo: "/images/clients/renault-logo.png" },
+    { sector: "", name: "U-Shin", logo: "/images/clients/minebea-logo.png" },
+    { sector: "", name: "Honda Lock", logo: "/images/clients/minebea-logo.png" },
+    { sector: "Automotivo", name: "Clusters", logo: "/images/clients/continental-logo.png" },
+    { sector: "Automotivo", name: "Sistemas Frenagem", logo: "/images/clients/continental-logo.png" },
+    { sector: "", name: "Intertrim/Trimtec", logo: "/images/clients/antolin-logo.png" },
+    { sector: "", name: "Iramec", logo: "/images/clients/antolin-logo.png" },
+    { sector: "Sistemas de Limpadores", name: "Wipers - Campinas", logo: "/images/clients/valeo-logo.png" },
+    { sector: "Climatização", name: "Itatiba", logo: "/images/clients/valeo-logo.png" },
+    { sector: "Powertrain - THS", name: "Itatiba", logo: "/images/clients/valeo-logo.png" },
+    { sector: "Sistemas Elétricos - VCC", name: "Campinas", logo: "/images/clients/valeo-logo.png" },
+    { sector: "Módulos de Coluna", name: "Tunisia", logo: "/images/clients/valeo-logo.png" },
+    { sector: "Dispositivos Inteligentes", name: "Veszprém - Hungria", logo: "/images/clients/valeo-logo.png" },
+    { sector: "", name: "Mauá", logo: "/images/clients/saint-gobain-logo.png" },
+    { sector: "", name: "Goiana", logo: "/images/clients/saint-gobain-logo.png" },
+    { sector: "", name: "Gravataí", logo: "/images/clients/saint-gobain-logo.png" },
+    { sector: "", name: "México", logo: "/images/clients/saint-gobain-logo.png" },
+    { sector: "", name: "Guagan", logo: "/images/clients/guangan-logo.jpg" },
+    { sector: "", name: "Litens", logo: "/images/clients/litens-logo.jpg" },
+    { sector: "", name: "Giobert", logo: "/images/clients/giobert-logo.jpg" },
+    { sector: "", name: "Ática", logo: "/images/clients/atica-logo.png" },
+    { sector: "", name: "Trico", logo: "/images/clients/trico-logo.jpg" },
+    { sector: "", name: "Tecfil", logo: "/images/clients/tecfil-logo.png" },
+    { sector: "", name: "Hydro", logo: "/images/clients/hydro-logo.png" },
+    { sector: "", name: "Stellwag", logo: "/images/clients/stellwag-logo.png" },
   ]
 
   return (
@@ -16,8 +32,7 @@ export default function ClientsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Nossos Clientes</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Somos parceiros das principais montadoras do mercado brasileiro, fornecendo soluções que atendem aos mais
-            rigorosos padrões de qualidade.
+            Somos parceiros das principais sistemistas do mercado, fornecendo soluções que atendem aos padrões de qualidade.
           </p>
         </div>
 
@@ -30,6 +45,8 @@ export default function ClientsSection() {
                   alt={`Logo ${client.name}`}
                   className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition-all" // Ajustado para melhor visualização de logos
                 />
+                <h4>{client.sector}</h4>
+                <p>{client.name}</p>
               </div>
             </div>
           ))}
