@@ -51,28 +51,6 @@ export default function CertificatesSection() {
             </Card>
           ))}
         </div>
-
-        <div className="bg-blue-50 rounded-2xl p-8 lg:p-12 text-center">
-          <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Compromisso com a Excelência</h3>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
-            Mantemos rigorosos padrões de qualidade em todos os nossos processos, desde a matéria-prima até o produto
-            final, garantindo total conformidade com as especificações técnicas e normas internacionais.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-700">Conformidade</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">0</div>
-              <div className="text-gray-700">Defeitos PPM</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-gray-700">Controle de Qualidade</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
