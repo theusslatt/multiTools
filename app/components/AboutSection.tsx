@@ -7,13 +7,18 @@ export default function AboutSection() {
       icon: Target,
       title: "Missão",
       description:
-        "Fornecer soluções em injeção plástica com excelência técnica e qualidade superior para a indústria automotiva.",
+        "Viabilizar projetos inovadores dos nossos clientes por meio  da construção de moldes e produção de peças plásticas contribuindo para o desenvolvimento da indústria automotiva brasileira.",
     },
     {
       icon: Eye,
       title: "Visão",
       description:
-        "Ser referência nacional em injeção plástica automotiva, reconhecida pela inovação e confiabilidade.",
+        "Ser uma empresa sólida,  competitiva e estar entre os melhores fornecedores  de peças plásticas mundiais.",
+    },
+    {
+      icon: Cog,
+      title: "Valores",
+      description: "Atuar com responsabilidade social, ambiental, transparência e ética.",
     },
     {
       icon: Award,
@@ -21,21 +26,16 @@ export default function AboutSection() {
       description:
         "Compromisso com os mais altos padrões de qualidade, seguindo normas internacionais e certificações.",
     },
-    {
-      icon: Cog,
-      title: "Tecnologia",
-      description: "Investimento contínuo em equipamentos modernos e processos automatizados para máxima eficiência.",
-    },
   ]
 
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Sobre a Multitools</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Sobre a Multi Tools</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Fundada com o propósito de atender exclusivamente o setor automotivo, a Multitools se consolidou como
-            parceira estratégica das principais montadoras do país.
+            Fundada com o propósito de atender exclusivamente ao setor automotivo, a Multi Tools se consolidou como
+            parceira estratégica dos principais sistemistas da Indústria Automotiva do país.
           </p>
         </div>
 
@@ -57,15 +57,15 @@ export default function AboutSection() {
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Com mais de duas décadas de atuação no mercado, a Multitools nasceu da visão de especializar-se
-                  exclusivamente no segmento automotivo, oferecendo soluções personalizadas e de alta precisão.
+                  Com mais de três décadas de atuação no mercado, a Multi Tools nasceu da visão de especializar-se
+                  exclusivamente no segmento automotivo, oferecendo soluções personalizadas.
                 </p>
                 <p>
                   Nossa trajetória é marcada por investimentos constantes em tecnologia, capacitação de equipe e
                   melhoria contínua dos processos, sempre mantendo o foco na satisfação total dos nossos clientes.
                 </p>
                 <p>
-                  Hoje, somos reconhecidos como fornecedor confiável pelas principais montadoras, contribuindo para a
+                  Hoje, somos reconhecidos como fornecedor confiável por nossos clientes, contribuindo para a
                   qualidade e inovação da indústria automotiva brasileira.
                 </p>
               </div>
