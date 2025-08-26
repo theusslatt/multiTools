@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Award, Shield, CheckCircle2, FileText } from "lucide-react"
+import { Award, CheckCircle2, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function CertificatesSection() {
