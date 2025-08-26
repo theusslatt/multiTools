@@ -116,18 +116,6 @@ export default function Footer() {
                   }}
                   className="hover:text-white transition-colors"
                 >
-                  ISO 9001:2015
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#certificates"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    document.querySelector("#certificates")?.scrollIntoView({ behavior: "smooth" })
-                  }}
-                  className="hover:text-white transition-colors"
-                >
                   ISO 14001
                 </a>
               </li>
