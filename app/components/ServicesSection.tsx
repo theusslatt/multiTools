@@ -6,8 +6,8 @@ export default function ServicesSection() {
     {
       icon: Settings,
       title: "Injeção Plástica",
-      description: "Produção de peças plásticas com alta precisão dimensional e acabamento superior.",
-      features: ["Moldes de alta precisão", "Controle de qualidade rigoroso", "Produção em larga escala"],
+      description: "Produção de peças plásticas para o setor automotivo.",
+      features: ["Moldes de alta precisão", "Controle de qualidade", "Produção em larga escala"],
     },
     {
       icon: Wrench,
@@ -19,14 +19,8 @@ export default function ServicesSection() {
       icon: CheckCircle,
       title: "Controle de Qualidade",
       description: "Inspeção rigorosa em todas as etapas do processo produtivo.",
-      features: ["Certificação ISO", "Testes dimensionais", "Rastreabilidade completa"],
-    },
-    {
-      icon: Truck,
-      title: "Logística Integrada",
-      description: "Soluções logísticas para entrega just-in-time na linha de produção.",
-      features: ["Entrega programada", "Gestão de estoque", "Embalagem especializada"],
-    },
+      features: ["Certificação IATF", "Testes dimensionais", "Rastreabilidade completa"],
+    }
   ]
 
   return (
