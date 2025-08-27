@@ -6,7 +6,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "R. Sérvia, Nº 383\nSocorro - CEP: 04763-070\nSão Paulo - SP",
+      content: "R. Francisco Otaviano, Nº 195\nSocorro - CEP: 04763-150\nSão Paulo - SP",
     },
     {
       icon: Phone,
