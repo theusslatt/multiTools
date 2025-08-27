@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Target, Eye, Award, Cog } from 'lucide-react'
+import { Target, Eye, Cog } from 'lucide-react'
 
 export default function AboutSection() {
   const values = [
