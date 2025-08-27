@@ -43,7 +43,7 @@ export default function ClientsSection() {
                 <img
                   src={client.logo || "/placeholder.svg"}
                   alt={`Logo ${client.name}`}
-                  className="mx-auto h-16 object-contain grayscale hover:grayscale-0 transition-all" // Ajustado para melhor visualização de logos
+                  className="mx-auto h-16 object-contain transition-all" // Ajustado para melhor visualização de logos
                 />
                 <h4>{client.sector}</h4>
                 <p>{client.name}</p>
