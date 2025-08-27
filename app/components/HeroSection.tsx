@@ -11,9 +11,8 @@ export default function HeroSection() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Excelência em
-                <span className="text-blue-600 block">Injeção Plástica</span>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <span className="text-blue-600 block"> Injeção de Peças Automotivas em <br /> Plástico de Engenharia.</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Soluções especializadas para a indústria automotiva com mais de 38 anos de experiência, qualidade
