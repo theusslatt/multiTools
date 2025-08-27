@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, MessageCircleQuestionMark, Clock } from "lucide-react"
 
 export default function ContactSection() {
   const contactInfo = [
@@ -14,9 +14,10 @@ export default function ContactSection() {
       content: "(11) 5683-4200",
     },
     {
-      icon: Mail,
-      title: "E-mail",
-      content: "contato@multitools.com.br\nvendas@multitools.com.br",
+      icon: MessageCircleQuestionMark,
+      title: "WhatsApp",
+      link: "https://wa.me/5511914526205",
+      button: "Fale Conosco",
     },
     {
       icon: Clock,
@@ -52,6 +53,16 @@ export default function ContactSection() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 whitespace-pre-line">{info.content}</p>
+                    {info.button && info.link && (
+                      <a
+                        className="inline-flex gap-2 mt-2 px-4 py-2 rounded bg-green-500 text-white hover:bg-green-600 transition-colors duration-300"
+                        href={info.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      <info.icon size={20} className="text-white" /> {info.button}
+                      </a>
+                    )}
                   </CardContent>
                 </Card>
               ))}
