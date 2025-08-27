@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2" />
-                R. Sérvia, 383 - Socorro - SP
+                R. Francisco Otaviano, 195 - Socorro - SP
               </div>
               <div className="flex items-center">
                 <Phone size={16} className="mr-2" />
