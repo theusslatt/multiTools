@@ -20,12 +20,6 @@ export default function AboutSection() {
       title: "Valores",
       description: "Atuar com responsabilidade social, ambiental, transparência e ética.",
     },
-    {
-      icon: Award,
-      title: "Qualidade",
-      description:
-        "Compromisso com os mais altos padrões de qualidade, seguindo normas internacionais e certificações.",
-    },
   ]
 
   return (
@@ -39,7 +33,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {values.map((value, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
@@ -56,15 +50,15 @@ export default function AboutSection() {
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">Nossa História</h3>
               <div className="space-y-4 text-gray-600">
-                <p>
+                <p className="text-justify">
                   Com mais de três décadas de atuação no mercado, a Multi Tools nasceu da visão de especializar-se
                   exclusivamente no segmento automotivo, oferecendo soluções personalizadas.
                 </p>
-                <p>
+                <p className="text-justify">
                   Nossa trajetória é marcada por investimentos constantes em tecnologia, capacitação de equipe e
                   melhoria contínua dos processos, sempre mantendo o foco na satisfação total dos nossos clientes.
                 </p>
-                <p>
+                <p className="text-justify">
                   Hoje, somos reconhecidos como fornecedor confiável por nossos clientes, contribuindo para a
                   qualidade e inovação da indústria automotiva brasileira.
                 </p>
