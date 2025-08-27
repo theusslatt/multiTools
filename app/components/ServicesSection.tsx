@@ -7,13 +7,13 @@ export default function ServicesSection() {
       icon: Settings,
       title: "Injeção Plástica",
       description: "Produção de peças plásticas para o setor automotivo.",
-      features: ["Moldes de alta precisão", "Controle de qualidade", "Produção em larga escala"],
+      features: ["Injeção em PA, POM, ABS, PBT, PP, PE, TPE", "Controle de qualidade", "Produção em larga escala"],
     },
     {
       icon: Wrench,
       title: "Desenvolvimento de Moldes",
-      description: "Projeto e fabricação de moldes customizados para atender especificações técnicas.",
-      features: ["Design personalizado", "Simulação de processo", "Manutenção preventiva"],
+      description: "Projeto e fabricação de moldes customizados.",
+      features: ["Softwares: CATIA, CAD, CAM", "Simulação de processo", "Manutenção preventiva"],
     },
     {
       icon: CheckCircle,
