@@ -60,7 +60,7 @@ export default function HeroSection() {
 
           {/* Image */}
           <div className="relative">
-            <img src="/images/fabrica-multitools.png/" alt="Fábrica Multitools" className="rounded-lg shadow-2xl" />
+            <img src="/images/fabrica-multitools.jpg/" alt="Fábrica Multitools" className="rounded-lg shadow-2xl" />
             <div className="absolute inset-0 bg-blue-600 opacity-10 rounded-lg"></div>
           </div>
         </div>
