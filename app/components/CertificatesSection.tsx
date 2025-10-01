@@ -7,7 +7,7 @@ export default function CertificatesSection() {
     {
       name: "IATF 16949",
       description: "Sistema de Gestão da Qualidade Automotiva",
-      details: "Certificado BR038857 - Válido até 26/09/2025",
+      details: "Certificado BR044939 - Válido até 24/09/2028",
       icon: Award,
       pdfPath: "/certificates/iatf-16949.pdf",
     },
