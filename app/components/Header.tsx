@@ -23,7 +23,7 @@ export default function Header() {
     { label: "Certificados", href: "#certificates" },
     { label: "Clientes", href: "#clients" },
     { label: "Contato", href: "#contact" },
-    { label: "Transparencia", href: "/certificates/transparencia.pdf" },
+    { label: "Transparência", href: "/certificates/transparencia.pdf" },
   ]
 
   const handleScrollToSection = (href: string) => {

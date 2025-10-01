@@ -12,7 +12,7 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                <span className="text-blue-600 block"> Injeção de Peças Automotivas em <br /> Plástico de Engenharia.</span>
+                <span className="text-blue-600 block"> Injeção de Peças Automotivas em <br /> Plástico de Engenharia</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Soluções especializadas para a indústria automotiva com mais de 38 anos de experiência, qualidade

@@ -66,7 +66,7 @@ export default function AboutSection() {
             </div>
             <div>
               <img
-                src="/images/multi-tools-art.png" // Usando a arte aqui
+                src="/images/multi-logo.png"
                 alt="Arte abstrata da Multi Tools"
                 className="rounded-lg shadow-lg"
               />
