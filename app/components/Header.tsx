@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react" // Importado useEffect
+import { useState, useEffect } from "react"
 import { Menu, X } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
@@ -31,11 +31,11 @@ export default function Header() {
     if (targetElement) {
       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
-        top: targetPosition - headerHeight - 20, // Subtrai a altura do header e um offset extra
+        top: targetPosition - headerHeight - 20,
         behavior: "smooth"
       });
     }
-    setIsMenuOpen(false); // Fecha o menu mobile após clicar
+    setIsMenuOpen(false);
   };
 
   return (
@@ -53,19 +53,26 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
-                onClick={(e) => {
-                  e.preventDefault()
-                  handleScrollToSection(item.href)
-                }}
-              >
-                {item.label}
-              </a>
-            ))}
+            {menuItems.map((item) => {
+              const isPdf = item.href.endsWith(".pdf");
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  {...(isPdf
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {
+                        onClick: (e) => {
+                          e.preventDefault();
+                          handleScrollToSection(item.href);
+                        },
+                      })}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -77,19 +84,26 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pb-4">
-            {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
-                onClick={(e) => {
-                  e.preventDefault()
-                  handleScrollToSection(item.href)
-                }}
-              >
-                {item.label}
-              </a>
-            ))}
+            {menuItems.map((item) => {
+              const isPdf = item.href.endsWith(".pdf");
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                  {...(isPdf
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {
+                        onClick: (e) => {
+                          e.preventDefault();
+                          handleScrollToSection(item.href);
+                        },
+                      })}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
         )}
       </div>
