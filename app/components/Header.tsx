@@ -47,7 +47,7 @@ export default function Header() {
             <img
               src="/images/multi-tools-logo.png"
               alt="Multi Tools - Ferramentaria e Injeção de Plásticos"
-              className="h-20"
+              className="h-16"
             />
           </div>
 
