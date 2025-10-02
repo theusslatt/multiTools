@@ -5,7 +5,7 @@ import { ArrowRight, Factory, Award, Users } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-50 to-white pt-20 pb-16"> {/* Adicionado pt-20 novamente */}
+    <section id="home" className="bg-gradient-to-br from-blue-50 to-white pt-12 pb-16"> {/* Adicionado pt-20 novamente */}
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
