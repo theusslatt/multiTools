@@ -11,9 +11,9 @@ export default function Footer() {
           <div>
             <div className="flex items-center cursor-pointer" onClick={() => window.location.reload()}>
               <img
-                src="/images/multi-tools-logo.png" // Novo logo
+                src="/images/multi-tools-logo.png"
                 alt="Multi Tools Logo"
-                className="h-12 mb-4 brightness-0 invert"
+                className="h-12 mb-4"
               />
             </div>
             <p className="text-gray-300 mb-4">
