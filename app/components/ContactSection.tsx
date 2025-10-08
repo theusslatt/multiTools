@@ -20,15 +20,15 @@ export default function ContactSection() {
       button: "Fale Conosco",
     },
     {
-      icon: Clock,
-      title: "Horário",
-      content: "Segunda a Sexta\n07:00 às 17:00",
-    },
-    {
       icon: MessageCircleQuestionMark,
       title: "WhatsApp - RH",
       link: "https://wa.me/5511971551878",
       button: "Trabalhe Conosco",
+    },
+    {
+      icon: Clock,
+      title: "Horário",
+      content: "Segunda a Sexta\n07:00 às 17:00",
     },
   ]
 
