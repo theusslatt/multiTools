@@ -15,7 +15,7 @@ export default function ContactSection() {
     },
     {
       icon: MessageCircleQuestionMark,
-      title: "WhatsApp",
+      title: "WhatsApp - Comercial",
       link: "https://wa.me/5511914526205",
       button: "Fale Conosco",
     },
@@ -23,6 +23,12 @@ export default function ContactSection() {
       icon: Clock,
       title: "Horário",
       content: "Segunda a Sexta\n07:00 às 17:00",
+    },
+    {
+      icon: MessageCircleQuestionMark,
+      title: "WhatsApp - RH",
+      link: "https://wa.me/5511971551878",
+      button: "Trabalhe Conosco",
     },
   ]
 
