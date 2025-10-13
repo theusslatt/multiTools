@@ -16,7 +16,7 @@ export default function ContactSection() {
     {
       icon: MessageCircleQuestionMark,
       title: "WhatsApp - Comercial",
-      link: "https://wa.me/5511914526205",
+      link: "https://wa.me/5511983722272",
       button: "Fale Conosco",
     },
     {
