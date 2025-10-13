@@ -76,18 +76,6 @@ export default function Footer() {
                   Controle de Qualidade
                 </a>
               </li>
-              <li>
-                <a
-                  href="#services"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    document.querySelector("#services")?.scrollIntoView({ behavior: "smooth" })
-                  }}
-                  className="hover:text-white transition-colors"
-                >
-                  Logística Integrada
-                </a>
-              </li>
             </ul>
           </div>
 
